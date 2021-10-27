@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1,5rem;
+}
+header{
+    background-color: rgb(255, 214, 189);
+    height: 110px;
+    position: sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+    "titulo ."
+    "titulo menu";
+}
+
+main{
+    background-image: url(../multimedia/wov.png);
+}
+
+
+footer{
+    background-image: linear-gradient(white, rgb(255, 214, 189));
+}
+footer section{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+.barraMenu{
+    grid-area: menu;
+}
+.menuNavegador{
+    text-align: end;
+    list-style: none;
+}
+.menuNavegador li{
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+}
+.menuNavegador ul{
+    position: absolute;
+    display: none;
+}
+.menuNavegador ul li{
+    display: block;
+    background-color: white
+}
+.menuNavegador li:hover ul{
+    display: block;
+}
+.menuNavegador li:hover a{
+    color: white;
+}
+
+.mainPreguntasSomos{
+    height: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionPreguntasSomos{
+    width: 900px;
+    margin: 10px;
+}
+.footerNosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footerSectionNosotros{
+    margin: 100px;
+    width: 250px;
+    height: 250px;
+}
+
+.mainIndex{
+    text-align: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "iphone macbook acc";
+}
+.imgIphone{
+    grid-area: iphone;
+}
+.imgMacbook{
+    grid-area: macbook;
+}
+.imgAccesorios{
+    grid-area: acc;
+}
+.imgIphone :hover{
+    transform: scale(1.1,1.1)
+}
+.imgMacbook :hover{
+    transform: scale(1.1,1.1)
+}
+.imgAccesorios :hover{
+    transform: scale(1.1,1.1)
+}
+.tituloPagina {
+    font-size: 5rem;
+    grid-area: titulo;
+    
+}
+.tituloPregFrec{
+    font-size: 2.5rem;
+}
+.tituloContacto{
+    font-size: 3rem;
+    text-align: center;
+}
+.button{
+    background-color: white;
+    border-color: rgb(255, 214, 189);;
+    color: black;
+}
+

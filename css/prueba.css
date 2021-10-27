@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62,5%; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1,5rem; }
+
+header {
+  background-color: #ffd6bd;
+  height: 110px;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas: "titulo ." "titulo menu"; }
+
+main {
+  background-image: url(../multimedia/wov.png); }
+
+footer {
+  background-image: linear-gradient(white, #ffd6bd); }
+  footer section {
+    display: inline-block; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.barraMenu {
+  grid-area: menu; }
+
+.header__navegador {
+  text-align: end;
+  list-style: none; }
+  .header__navegador li {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px; }
+    .header__navegador li a:hover {
+      color: white; }
+    .header__navegador li ul {
+      position: absolute;
+      display: none; }
+      .header__navegador li ul:hover {
+        display: block; }
+      .header__navegador li ul li {
+        display: block;
+        background-color: white; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.footer__section {
+  margin: 100px;
+  width: 250px;
+  height: 250px; }
+
+.menu {
+  text-align: center;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "iphone macbook acc" "carousel carousel carousel"; }
+
+.menu__sectionIphone {
+  grid-area: iphone; }
+
+.menu__sectionMacbook {
+  grid-area: macbook; }
+
+.menu__sectionAccesorios {
+  grid-area: acc; }
+
+.menu__carousel {
+  justify-content: center;
+  grid-area: carousel;
+  height: 50rem;
+  width: 75rem; }
+
+.main {
+  height: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main__preguntas {
+  width: 900px;
+  margin: 10px;
+  justify-content: center; }
