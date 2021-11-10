@@ -1,140 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+html {
+  font-size: 62,5%; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62,5%;
-}
-body{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1,5rem;
-}
-header{
-    background-color: rgb(255, 214, 189);
-    height: 110px;
-    position: sticky;
-    top: 0px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 4fr 1fr;
-    grid-template-areas:
-    "titulo ."
-    "titulo menu";
-}
-
-main{
-    background-image: url(../multimedia/wov.png);
-}
-
-
-footer{
-    background-image: linear-gradient(white, rgb(255, 214, 189));
-}
-footer section{
-    display: inline-block;
-}
-
-a{
-    text-decoration: none;
-    color: black
-}
-
-.barraMenu{
-    grid-area: menu;
-}
-.menuNavegador{
-    text-align: end;
-    list-style: none;
-}
-.menuNavegador li{
-    display: inline-block;
-    position: relative;
-    padding: 0 5px;
-}
-.menuNavegador ul{
-    position: absolute;
-    display: none;
-}
-.menuNavegador ul li{
-    display: block;
-    background-color: white
-}
-.menuNavegador li:hover ul{
-    display: block;
-}
-.menuNavegador li:hover a{
-    color: white;
-}
-
-.mainPreguntasSomos{
-    height: 700px;
+header {
+  background-image: linear-gradient(#929292, white);
+  padding-bottom: 3vw; }
+  header .header__titulo {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sectionPreguntasSomos{
-    width: 900px;
-    margin: 10px;
-}
-.footerNosotros{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-.footerSectionNosotros{
-    margin: 100px;
-    width: 250px;
-    height: 250px;
-}
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700; }
+    header .header__titulo h1 {
+      font-size: 3.5vw; }
+  header .header__nav {
+    justify-content: center;
+    text-align: center; }
+  header .header__iconos {
+    display: inline-block;
+    justify-items: right; }
+    header .header__iconos .header__iconos--insta {
+      border: none;
+      background-color: transparent;
+      font-size: 1.5vw;
+      color: #c900c9; }
+    header .header__iconos .header__iconos--wapp {
+      border: none;
+      background-color: transparent;
+      font-size: 1.5vw;
+      color: #08da08; }
 
-.mainIndex{
-    text-align: center;
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "iphone macbook acc";
-}
-.imgIphone{
-    grid-area: iphone;
-}
-.imgMacbook{
-    grid-area: macbook;
-}
-.imgAccesorios{
-    grid-area: acc;
-}
-.imgIphone :hover{
-    transform: scale(1.1,1.1)
-}
-.imgMacbook :hover{
-    transform: scale(1.1,1.1)
-}
-.imgAccesorios :hover{
-    transform: scale(1.1,1.1)
-}
-.tituloPagina {
-    font-size: 5rem;
-    grid-area: titulo;
-    
-}
-.tituloPregFrec{
-    font-size: 2.5rem;
-}
-.tituloContacto{
-    font-size: 3rem;
-    text-align: center;
-}
-.button{
-    background-color: white;
-    border-color: rgb(255, 214, 189);;
-    color: black;
-}
+main .menu__carousel {
+  justify-content: center;
+  padding-bottom: 2vw; }
+  main .menu__carousel img {
+    width: 30vw;
+    height: 45vw; }
 
+main .main__titulo {
+  grid-area: titulo;
+  text-align: center;
+  padding-bottom: 1vw; }
+
+main .main__iphone {
+  text-align: center; }
+  main .main__iphone img {
+    height: 26vw;
+    width: 29vw; }
+
+main .main__mac {
+  text-align: center; }
+  main .main__mac img {
+    height: 26vw;
+    width: 29vw; }
+
+main .main__acc {
+  text-align: center; }
+  main .main__acc img {
+    height: 26vw;
+    width: 29vw; }
+
+main .vermas {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 2vw 0vw 2vw 0vw; }
+
+main .main__texto {
+  text-align: center;
+  padding-top: 3vw; }
+  main .main__texto p {
+    padding: 2vw 20vw 5vw 20vw; }
+
+footer {
+  background-image: linear-gradient(white, #929292);
+  padding: 5vw 5vw; }
+  footer .footer__section {
+    text-align: center;
+    padding-bottom: 2vw; }
+    footer .footer__section .footer__titulo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2vw; }
+    footer .footer__section li {
+      list-style-type: none;
+      padding-bottom: 1vw; }
+  footer .pag {
+    display: block; }
