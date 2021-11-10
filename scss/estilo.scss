@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+
+header{
+    background-image: linear-gradient(rgb(146, 146, 146),white);
+    padding-bottom: 3vw;
+        .header__titulo{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+            h1{
+                font-size: 3.5vw;
+            }
+        }
+        .header__nav{
+        justify-content: center;
+        text-align: center;
+        }
+        .header__iconos{
+        display: inline-block;
+        justify-items: right;
+            .header__iconos--insta{
+                border: none;
+                background-color: transparent;
+                font-size: 1.5vw;
+                color: rgb(201, 0, 201);
+            }
+            .header__iconos--wapp{
+                border: none;
+                background-color: transparent;
+                font-size: 1.5vw;
+                color: rgb(8, 218, 8);
+            }
+            }
+}
+
+main{
+    
+    .menu__carousel{
+        justify-content: center;
+        padding-bottom: 2vw;
+        img{ 
+        width: 30vw;
+        height: 45vw;
+        }
+    }
+    .main__titulo{
+        grid-area: titulo;
+        text-align: center;
+        padding-bottom: 1vw;
+    }
+    .main__iphone{
+        text-align: center;
+        img{
+            height: 26vw;
+            width: 29vw;
+        }
+    }
+    .main__mac{
+        text-align: center;
+        img{
+            height: 26vw;
+            width: 29vw;
+        }
+    }
+    .main__acc{
+        text-align: center;
+        img{
+            height: 26vw;
+            width: 29vw;
+        }
+    }
+    .vermas{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .main__texto{
+        text-align: center;
+        padding-top: 3vw;
+        p{
+            padding: 2vw 20vw 5vw 20vw;
+        }
+    }
+}
+
+footer{
+    background-image: linear-gradient(white,rgb(146, 146, 146));
+    padding: 5vw 5vw;
+    .footer__section{
+        text-align: center;
+        padding-bottom: 2vw;
+        .footer__titulo{
+            font-family: 'Dancing Script', cursive;
+            font-size: 2vw;
+        }
+        li{
+            list-style-type: none;
+            padding-bottom: 1vw;
+        }
+    }
+    .pag{
+        display: block;
+    }
+}
+
+
