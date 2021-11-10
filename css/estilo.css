@@ -17,7 +17,7 @@ header {
     font-family: 'Dancing Script', cursive;
     font-weight: 700; }
     header .header__titulo h1 {
-      font-size: 3.5vw; }
+      font-size: 60px; }
   header .header__nav {
     justify-content: center;
     text-align: center; }
