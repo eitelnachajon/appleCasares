@@ -1,5 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.main__productos {
+  justify-items: center; }
+  .main__productos .main__productos-titulo {
+    color: white;
+    background-color: black;
+    text-align: center; }
+  .main__productos .main__productos-subtitulo {
+    margin-top: 1vw;
+    color: white;
+    background-color: #b1b1b1;
+    text-align: center; }
+  .main__productos .main__productos-iphone {
+    padding-top: 1vw;
+    text-align: center;
+    height: 40vw;
+    width: 50vw; }
+    @media screen and (max-width: 800px) {
+      .main__productos .main__productos-iphone {
+        height: 55vw;
+        width: 50vw; } }
+    .main__productos .main__productos-iphone img {
+      padding: 5vw;
+      padding-bottom: 0;
+      margin: 2vw;
+      height: 24vw;
+      width: 24vw; }
+      @media screen and (max-width: 800px) {
+        .main__productos .main__productos-iphone img {
+          height: 38vw;
+          width: 32vw; } }
+  .main__productos .main__productos-macbook {
+    padding-top: 1vw;
+    text-align: center;
+    height: 40vw;
+    width: 48vw; }
+    @media screen and (max-width: 800px) {
+      .main__productos .main__productos-macbook {
+        height: 55vw;
+        width: 50vw; } }
+    .main__productos .main__productos-macbook img {
+      padding: 3vw;
+      padding-bottom: 0;
+      margin: 2vw;
+      height: 28vw;
+      width: 33vw; }
+      @media screen and (max-width: 800px) {
+        .main__productos .main__productos-macbook img {
+          height: 38vw;
+          width: 42vw; } }
+
+.main__clientes {
+  text-align: center;
+  align-items: center; }
+  .main__clientes .imgVertical {
+    height: 38vw;
+    width: 39vw;
+    border-radius: 1.5rem; }
+  .main__clientes .imgHorizontal {
+    height: 28vw;
+    width: 50vw;
+    border-radius: 1.5rem; }
+  .main__clientes .main__clientes-titulo {
+    background-color: black;
+    color: white;
+    justify-content: center; }
+  .main__clientes .foto__fondo {
+    background-image: linear-gradient(white, #b9b9b9, white);
+    padding: 2vw; }
+  .main__clientes .descripcion {
+    display: grid;
+    align-content: center;
+    margin: 1vw; }
+
+.main__contacto-titulo {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  text-align: center; }
+
+.main__contacto-subtitulo {
+  margin-top: 1vw;
+  color: white;
+  background-color: #b1b1b1;
+  text-align: center; }
+
+.boton {
+  background-color: #929292; }
+
+.main__preguntas .main__preguntas-titulo {
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 2vw; }
+
+.main__preguntas .main__preguntas-div {
+  text-align: center;
+  padding: 1vw; }
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +111,7 @@ header {
   padding-bottom: 3vw; }
   header .header__titulo {
     text-align: center;
+    align-items: center;
     justify-content: center;
     font-family: 'Dancing Script', cursive;
     font-weight: 700; }
@@ -21,6 +120,9 @@ header {
   header .header__nav {
     justify-content: center;
     text-align: center; }
+    @media screen and (min-width: 800px) {
+      header .header__nav {
+        padding-left: 1vw; } }
   header .header__iconos {
     display: inline-block;
     justify-items: right; }
@@ -50,20 +152,23 @@ main .main__titulo {
 main .main__iphone {
   text-align: center; }
   main .main__iphone img {
-    height: 26vw;
-    width: 29vw; }
+    height: 24vw;
+    width: 28vw;
+    border-radius: 1vw; }
 
 main .main__mac {
   text-align: center; }
   main .main__mac img {
-    height: 26vw;
-    width: 29vw; }
+    height: 24vw;
+    width: 28vw;
+    border-radius: 1vw; }
 
 main .main__acc {
   text-align: center; }
   main .main__acc img {
-    height: 26vw;
-    width: 29vw; }
+    height: 24vw;
+    width: 28vw;
+    border-radius: 1vw; }
 
 main .vermas {
   text-align: center;
@@ -85,9 +190,16 @@ footer {
     padding-bottom: 2vw; }
     footer .footer__section .footer__titulo {
       font-family: 'Dancing Script', cursive;
-      font-size: 2vw; }
+      font-size: 3vw; }
     footer .footer__section li {
       list-style-type: none;
       padding-bottom: 1vw; }
+    footer .footer__section a {
+      color: black;
+      text-decoration: none; }
   footer .pag {
     display: block; }
+
+.productosIphone img {
+  height: 10px;
+  width: 20px; }

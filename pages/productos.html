@@ -4,55 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Apple Casares - iPhone | Mac | Accesorios</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../multimedia/smartphone.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta name="keywords" content="APPLE, IPHONE, CELULAR, MAC, IOS, AIRPODS, CASARES, COMPRAR">
+    <meta name="description" content="Somos un e-commerce especializado en la venta de productos Apple. Originales con garantía. Modelos: iPhone, iPad, MacBook, iMac, Apple Watch y todo tipo de accesorios originales.">
 </head>
 <body>
-    <header class="header">
-        <h1 class="tituloPagina">Apple Casares</h1>
-        <nav class="barraMenu">
-            <ul class="menuNavegador">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a>
-                    <ul>    
-                        <li>iPhone</li>
-                        <li>Mac</li>
-                        <li>Accesorios</li>
-                    </ul>
-                </li> 
-                <li><a href="../pages/pregfrecuentes.html">Preguntas frecuentes</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="header__titulo col-lg-4">
+                <h1>Apple Casares</h1>
+            </div>
+            <div class="col-lg-8">
+                <nav class="navbar navbar-expand-lg navbar-light header__nav ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/pregfrecuentes.html">Preguntas frecuentes</a>
+                    </div>
+                    <div class="header_nav--iconos d-lg-none">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    </div>
+                    <div class="header__iconos d-none d-lg-block">
+                        <button class="header__iconos--insta"><i class="fab fa-instagram-square insta"></i></button>
+                        <button class="header__iconos--wapp"><i class="fab fa-whatsapp"></i></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main class="mainPreguntasSomos">
-        <section class="sectionPreguntasSomos">
-        <h2 class="tituloPregFrec">Productos</h2>
-        </section>
-
+    <main class="container-fluid main__productos">
+        <div class="row main__productos-titulo">
+        <h2 class="">Productos</h2>
+        </div>
+        <div class="row main__productos-subtitulo">
+            <h3>iPhone</h3>
+        </div>
+        <div class="row">
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone11.jpg" alt="iphone 11" class="productosIphone">
+                <h4>iPhone 11</h4>
+            </div>
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone11promax.jpg" alt="iphone 11 pro max" class="productosIphone">
+                <h4>iPhone 11 Pro Max</h4>
+            </div>
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone12.png" alt="iphone 12" class="productosIphone">
+                <h4>iPhone 12</h4>
+            </div>
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone12promax.jpg" alt="iphone 12 pro max" class="productosIphone">
+                <h4>iPhone 12 Pro Max</h4>
+            </div>
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone13b.png" alt="iphone 13" class="productosIphone">
+                <h4>iPhone 13</h4>
+            </div>
+            <div class="col-md main__productos-iphone">
+                <img src="../multimedia/iphone13promax.png" alt="iphone 13 pro max" class="productosIphone">
+                <h4>iPhone 13 Pro Max</h4>
+            </div>
+        </div>
+        <div class="row main__productos-subtitulo">
+            <h3>Macbook</h3>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 main__productos-macbook">
+                <img src="../multimedia/macbookair.jpg" alt="macbook air">
+                <h4>Macbook Air</h4>
+            </div>
+            <div class="col-xs-12 col-lg-6 main__productos-macbook">
+                <img src="../multimedia/macbookpro.jpg" alt="macbook pro">
+                <h4>Macbook Pro</h4>
+            </div>
+        </div>
     </main>
-    <footer class="footerNosotros">
-        <section class="footerSectionNosotros">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25946.74123371429!2d-61.369613762479716!3d-35.6192783470553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c08187bb32558d%3A0x42c2f684f36634e8!2sCarlos%20Casares%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1631745336558!5m2!1ses-419!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-        <section class="footerSectionNosotros">
-            <h3>Medios de pago</h3>
-            <li>Transferencia</li>
-            <li>Tarjeta de credito</li>
-            <li>Tarjeta de debito</li>
-            <li>Criptomoneda</li>
-            <li>Dolar billete</li>
-        </section>
-        <section class="footerSectionNosotros">
-            <h3>Contactanos</h3>
-            <li>+54000000000</li>
-            <li>acasares@gmail.com</li>
-            <li>direccion x</li>
-        </section>
-        </footer>
+    <hr>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <section class="footer__section col-lg-4 pag">
+                <h4 class="footer__titulo">Apple Casares</h4>
+                <a href="../index.html"><li>Inicio</li></a>
+                <a href="../pages/productos.html"><li>Productos</li></a>
+                <a href="../pages/clientes.html"><li>Clientes</li></a>
+                <a href="../pages/pregfrecuentes.html"><li>Preguntas frecuentes</li></a>
+            </section>
+            <section class="footer__section col-lg-4">
+                <h4>Medios de pago</h4>
+                <li>Transferencia</li>
+                <li>Tarjeta de credito</li>
+                <li>Criptomoneda</li>
+                <li>Dolar billete</li>
+            </section>
+            <section class="footer__section col-lg-4">
+                <h4>Contactanos</h4>
+                <li>+54000000000</li>
+                <li>acasares@gmail.com</li>
+                <li>direccion x</li>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdeaafc415.js" crossorigin="anonymous"></script>
 </body>
 </html>
