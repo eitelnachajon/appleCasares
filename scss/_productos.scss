@@ -1,0 +1,56 @@
+.main__productos{
+    justify-items: center;
+    .main__productos-titulo{
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+    .main__productos-subtitulo{
+        margin-top: 1vw;
+        color: white;
+        background-color: rgb(177, 177, 177);
+        text-align: center;
+    }
+    .main__productos-iphone{
+        padding-top: 1vw;
+        text-align: center;
+        @media screen and (max-width: 800px) {
+            height: 55vw;
+            width: 50vw;
+        }
+        height: 40vw;
+        width: 50vw; 
+        img{
+            @media screen and (max-width: 800px) {
+                height: 38vw;
+                width: 32vw;
+            }
+            padding: 5vw;
+            padding-bottom: 0;
+            margin: 2vw;
+            height: 24vw;
+            width: 24vw;
+        }
+    }
+    .main__productos-macbook{
+        padding-top: 1vw;
+        text-align: center;
+        @media screen and (max-width: 800px) {
+            height: 55vw;
+            width: 50vw;
+        }
+        height: 40vw;
+        width: 48vw; 
+        img{
+            @media screen and (max-width: 800px) {
+                height: 38vw;
+                width: 42vw;
+            }
+            padding: 3vw;
+            padding-bottom: 0;
+            margin: 2vw;
+            height: 28vw;
+            width: 33vw;
+        }
+    }
+}

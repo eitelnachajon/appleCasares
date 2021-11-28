@@ -1,0 +1,29 @@
+.main__clientes{
+    text-align: center;
+    align-items: center;
+    
+    .imgVertical{
+        height: 38vw;
+        width: 39vw;
+        border-radius: 1.5rem;
+    }
+    .imgHorizontal{
+        height: 28vw;
+        width: 50vw;
+        border-radius: 1.5rem;
+    }
+    .main__clientes-titulo{
+        background-color: black;
+        color: white;
+        justify-content: center;
+    }
+    .foto__fondo{
+        background-image: linear-gradient(white,rgb(185, 185, 185),white);
+        padding: 2vw;
+    }
+    .descripcion{
+        display: grid;
+        align-content: center;
+        margin: 1vw;
+    }
+}
